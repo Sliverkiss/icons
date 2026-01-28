@@ -31,7 +31,7 @@ jobs:
       run: |
         python .github/scripts/generate_image_json.py
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
